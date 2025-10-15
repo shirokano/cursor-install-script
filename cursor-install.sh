@@ -55,7 +55,7 @@ check_cursor_running() {
 # Fetch the latest version information from the Cursor API
 fetch_latest_version() {
     local api_response
-    api_response=$(curl -s "$API_URL")
+    api_response=$(curl -fsSL "$API_URL")
     CURSOR_URL=$(echo "$api_response" | grep -o '"downloadUrl":"[^"]*"' | cut -d'"' -f4)
     LATEST_VERSION=$(echo "$api_response" | grep -o '"version":"[^"]*"' | cut -d'"' -f4)
 
