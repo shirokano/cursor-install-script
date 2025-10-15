@@ -9,8 +9,8 @@ echo "Installing Cursor AI IDE..."
     ICON_URL="https://us1.discourse-cdn.com/flex020/uploads/cursor1/original/2X/a/a4f78589d63edd61a2843306f8e11bad9590f0ca.png"
 
     # Paths for installation
-    APPIMAGE_PATH="/opt/cursor.appimage"
-    ICON_PATH="/opt/cursor.png"
+    APPIMAGE_PATH="/opt/cursor/cursor.appimage"
+    ICON_PATH="/opt/cursor/cursor.png"
     DESKTOP_ENTRY_PATH="/usr/share/applications/cursor.desktop"
 
     # Install curl if not installed
